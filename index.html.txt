@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.5">
+    <title>My Website</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#pictures">Picture</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1>Welcome to home Website!!!!!!!!!!!!</h1>
+        <p>This is website </p>
+    </section>
+
+    <section id="pictures">
+        <h2> The Gallery</h2>
+        <img src="images/pic1.jpg" alt="Beautiful">
+    </section>
+    <section id="contact">
+        <h2>Contact With Us</h2>
+        <form action="/submit" method="post">
+            <input type="text" name="name" placeholder="Your_Name">
+            <input type="email" name="email" placeholder="Your_Email">            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <section>
+        <h2>Watch Our Video</h2>
+        <iframe width="450" height="225" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <footer>
+        &copy; Contact information 
+     </footer>
+</body>
+</html>
