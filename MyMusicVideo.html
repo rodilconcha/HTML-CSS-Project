@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Music Video</title>
+    <h1 style="color:rgb(52, 45, 247);" >My Music and Videos</h1>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <iframe width="660" height="375" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+    <script>
+        function fadeIn(elementToFade) {
+            const element = document.getElementById(elementToFade);
+            element.style.opacity += 0.1;
+            if (element.style.opacity > 1.0) {
+                element.style.opacity = 1.0;
+            } else {
+                setTimeout(() => fadeIn(elementToFade), 100);
+            }
+        }
+
+        function fadeOut(elementToFade) {
+            const element = document.getElementById(elementToFade);
+            element.style.opacity -= 0.1;
+            if (element.style.opacity < 0.0) {
+                element.style.opacity = 0.0;
+            } else {
+                setTimeout(() => fadeOut(elementToFade), 100);
+            }
+        }
+    </script>
+    <div id="panel" style="width: 660px; height: 230px; text-align: center; background: red; opacity: 1.0;">
+       
+        I see a little silhouetto of a man
+        Scaramouche, Scaramouche, will you do the Fandango?
+        Thunderbolt and lightning, very, very frightening me
+        (Galileo) Galileo, (Galileo) Galileo, Galileo Figaro, magnifico
+        I'm just a poor boy, nobody loves me
+        He's just a poor boy from a poor family
+        Spare him his life from this monstrosity
+        Easy come, easy go, will you let me go?
+        Bismillah!
+        No, we will not let you go (let him go)
+        Bismillah!
+        We will not let you go (let him go)
+        Bismillah!
+        We will not let you go (let me go)
+        Will not let you go (let me go)
+        Never, never, never, never let me go
+        No, no, no, no, no, no, no
+        Oh, mamma mia, mamma mia
+        Mamma mia, let me go
+        Beelzebub has a devil put aside for me, for me, for me
+        So you think you can stone me and spit in my eye?
+        So you think you can love me and leave me to die?
+        Oh, baby, can't do this to me, baby
+        Just gotta get out, just gotta get right outta here
+        Ooh
+        Ooh, yeah, ooh, yeah
+        Nothing really matters, anyone can see
+        Nothing really matters
+        Nothing really matters to me
+        (Any way the wind blows)
+    </div>
+    <button onclick="fadeIn('panel')">Fade In</button>
+    <button onclick="fadeOut('panel')">Fade Out</button>
+</body>                                                                    
+</html>
